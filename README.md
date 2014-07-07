@@ -56,7 +56,6 @@ Try to make good highlighter for JavaScript source code.
     - +, -
     - ~
     - !
-    - 
     - void
     - delete
     - typeof
