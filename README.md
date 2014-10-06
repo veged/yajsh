@@ -1,65 +1,47 @@
 # Yet Another JavaScript Highlighter
 
-Try to make good highlighter for JavaScript source code.
+## What is this?
 
-## Items
-- regular text (+ punctuation)
-  - semicolon
-  - dot property get
-  - square brackets property get
-  - function call
-    - brackets
-    - comma
-  - brackets
-  - block
-  - label, colon
-- statement keywords (+ punctuation)
-  - single
-    - return
-    - continue
-  - with punctuation
-    - var, assign, comma
-    - function, round and curly brackets
-    - if, else, round and curly brackets
-    - for, in, round and curly brackets
-    - while, do, round and curly brackets
-    - switch, case, break, default, colons
-    - try, catch, finally, throw, round and curly brackets
-    - with, round and curly brackets
-- literals (+ punctuation)
-  - objects, brackets, comma
-  - arrays, brackets, comma
-  - strings, quotes
-  - numbers, NaN, Infinity, dot, e
-  - boolean
-  - regexps, slash, flags (g, i, m)
-  - null
-  - function, round and curly brackets
-  - this
-- operators
-  - ternary if
-  - binary
-    - assign: =, +=, -=, *=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=
-    - logic: ||, &&
-    - bit logic: |, ^, &
-    - equal: ===, !==, ==, !=
-    - relation: >=, >, <=, <
-    - bit shift: >>>, >>, <<
-    - add: +, -
-    - multiply: *, /, % 
-    - ,
-    - instanseof
-    - in
-  - unary
-    - prefix
-    - --, ++
-    - +, -
-    - ~
-    - !
-    - void
-    - delete
-    - typeof
-    - new
-    - postfix
-    - ++
-    - --
+Try to make good highlighter for JavaScript source code. WORK IN PROGRESS.
+
+The main approach is to highlight things based on semantic.
+For example brackets and other punctuation in different statements and literals should be a different color.
+
+Right now HTML+CSS output is only supported.
+
+## How to use?
+
+### Command-line
+
+*Note:* For using from command-line you should install it globally – `npm install -g yajsh`.
+
+```
+$ yajsh --help
+
+Usage:
+  yajsh [OPTIONS]
+
+
+Options:
+  -h, --help : Help
+  -v, --version : Version
+  -i INPUT, --input=INPUT : Input file (default: stdin)
+  -o OUTPUT, --output=OUTPUT : Output file (default: stdout)
+```
+
+#### COA
+
+Because of using [COA](https://github.com/veged/coa/) all command-line interface available through `require('yajsh').COA`.
+Example:
+
+```javascript
+require('yajsh').COA
+    .invoke({
+        input: 'tests/bla.js',
+        outpur: 'test/bla.js.html'
+    })
+```
+
+#### OMeta
+
+You can use `yajsh` through the `require('yajsh/lib/html').YetAnotherJSHighlighter` in terms of raw [OmetaJS](https://github.com/veged/ometa-js/)-grammas.

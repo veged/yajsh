@@ -1,9 +1,12 @@
 {
-  "name": "yajsh",
+  "name": "",
+  "description": "Semantic highlighter for JavaScript",
   "version": "0.0.1",
-  "author": "Sergey Berezhnoy <veged@ya.ru>",
+  "author": "Sergey Berezhnoy <veged@ya.ru> (http://github.com/veged)",
   "dependencies": {
-    "krasota": "0.2.0",
+    "coa": "^0.4.1",
+    "yajsh": "0.2.0",
+    "q": "^1.0.1",
     "stylus": "~0.47.1"
   },
   "devDependencies": {
@@ -11,8 +14,21 @@
     "chai": "1.8.1",
     "istanbul": "0.1.44"
   },
-  "main": "lib/yajsh",
+  "main": "lib/",
+  "bin": {
+    "yajsh": "./bin/yajsh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/veged/yajsh.git"
+  },
+  "licenses": [
+    {
+      "type": "AS IS"
+    }
+  ],
   "scripts": {
+    "prepublish": "./node_modules/krasota/node_modules/.bin/ometajs2js -b -i lib/html.ometajs -o lib/html.js",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
     "accept-all-test": "for i in `find test/ -name *.res.*`; do cp $i `echo $i | sed 's/\\.res\\./.exp./'`; done"
   }
