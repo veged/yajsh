@@ -6,6 +6,7 @@
   "dependencies": {
     "coa": "^0.4.1",
     "krasota": "0.2.0",
+    "ometajs": "^3.3.7",
     "q": "^1.0.1",
     "stylus": "~0.47.1"
   },
