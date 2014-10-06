@@ -3,35 +3,166 @@
   background-color: #fefefe;
   font: 12px PragmataPro, Monaco, Consolas, monospace;
 }
-.yajsh .stmt > .function > .keyword {
-  color: #5677fc;
-}
-.yajsh .stmt > .function > .name {
-  color: #5677fc;
-}
-.yajsh .stmt > .function > .punctuation {
-  color: rgba(86,119,252,0.6);
-}
-.yajsh .stmt > .var > .keyword {
-  color: #259b24;
-}
-.yajsh .stmt > .var > .name {
-  color: #259b24;
-}
-.yajsh .stmt > .var > .punctuation {
-  color: rgba(37,155,36,0.6);
-}
 .yajsh .comment {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.54);
 }
 .yajsh .comment > .punctuation {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.26);
 }
-.yajsh .keyword {
+.yajsh .punctuation {
+  color: rgba(0,0,0,0.54);
+}
+.yajsh .op {
+  color: rgba(0,0,0,0.54);
+}
+.yajsh .name {
+  color: rgba(0,0,0,0.87);
+}
+.yajsh .obj,
+.yajsh .null {
+  color: #9c27b0;
+}
+.yajsh .obj > .name,
+.yajsh .null > .name {
+  color: #9c27b0;
+}
+.yajsh .obj > .punctuation,
+.yajsh .null > .punctuation {
+  color: rgba(156,39,176,0.6);
+}
+.yajsh .arr {
+  color: #e91e63;
+}
+.yajsh .arr > .punctuation {
+  color: rgba(233,30,99,0.6);
+}
+.yajsh .re .str {
+  color: #cddc39;
+}
+.yajsh .re .punctuation {
+  color: rgba(205,220,57,0.6) !important;
+}
+.yajsh .bool {
+  color: #00bcd4;
+}
+.yajsh .num {
+  color: #ff5722;
+}
+.yajsh .num > .punctuation {
+  color: rgba(255,87,34,0.6);
+}
+.yajsh .str {
+  color: #009688;
+}
+.yajsh .str .punctuation {
+  color: rgba(0,150,136,0.6);
+}
+.yajsh .str .esc {
   font-weight: bold;
 }
-</style><pre class="yajsh"><span class="stmts"><span class="stmt"><span class="function"><span class="keyword">function</span> <span class="name">bla</span><span class="punctuation">(</span><span class="arg name">a</span><span class="punctuation">,</span> <span class="arg name">b</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>    <span class="comment"><span class="punctuation">/*</span>
+.yajsh .this {
+  font-weight: bold !important;
+}
+.yajsh .get-sb > .punctuation {
+  font-weight: bold;
+  color: #5677fc;
+}
+.yajsh .get-dot > .punctuation {
+  color: #5677fc;
+}
+.yajsh .call > .punctuation {
+  font-weight: bold;
+  color: #5677fc;
+}
+.yajsh .new > .keyword:first-child {
+  color: #056f00;
+  font-weight: normal !important;
+}
+.yajsh .new > .new-call > .punctuation {
+  font-weight: bold;
+  color: rgba(5,111,0,0.6);
+}
+.yajsh .func > .keyword {
+  color: #056f00;
+}
+.yajsh .func > .name,
+.yajsh .func > .arg > .name {
+  color: #259b24;
+}
+.yajsh .func > .punctuation {
+  color: rgba(37,155,36,0.6);
+}
+.yajsh .var > .keyword:first-child {
+  color: #056f00;
+}
+.yajsh .var > .name {
+  color: #259b24;
+}
+.yajsh .var > .punctuation {
+  color: rgba(37,155,36,0.6);
+}
+.yajsh .if > .keyword,
+.yajsh .switch > .keyword {
+  font-weight: bold;
+  color: #9e9d24;
+}
+.yajsh .if > .punctuation,
+.yajsh .switch > .punctuation {
+  color: rgba(158,157,36,0.6);
+}
+.yajsh .for > .keyword,
+.yajsh .while > .keyword,
+.yajsh .do > .keyword {
+  font-weight: bold;
+  color: #795548;
+}
+.yajsh .for > .punctuation,
+.yajsh .while > .punctuation,
+.yajsh .do > .punctuation {
+  color: rgba(121,85,72,0.6);
+}
+.yajsh .try > .keyword {
+  font-weight: bold;
+  color: #e51c23;
+}
+.yajsh .try > .punctuation {
+  color: rgba(229,28,35,0.6);
+}
+.yajsh .throw > .keyword {
+  color: #e51c23;
+}
+.yajsh .return > .keyword:first-child {
+  color: #ff5722;
+}
+.yajsh .break > .keyword,
+.yajsh .continue > .keyword {
+  color: #ff5722;
+}
+.yajsh .break > .name,
+.yajsh .continue > .name {
+  color: rgba(255,87,34,0.6);
+}
+.yajsh .stmt > .keyword:first-child,
+.yajsh .stmt > * > .keyword:first-child {
+  font-weight: bold;
+}
+.yajsh .stmt > .expr-stmt > .keyword:first-child {
+  font-weight: normal;
+}
+</style><pre class="yajsh"><span class="stmts"><span class="stmt"><span class="func func-stmt"><span class="keyword">function</span> <span class="name">bla</span><span class="punctuation">(</span><span class="arg"><span class="name">a</span></span><span class="punctuation">,</span> <span class="arg"><span class="name">b</span></span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>    <span class="comment"><span class="punctuation">/*</span>
      * Bla
-     <span class="punctuation">*/</span></span><br/>    <span class="function"><span class="keyword">function</span> <span class="name">x</span><span class="punctuation">(</span><span class="arg name">y</span><span class="punctuation">,</span> <span class="arg name">z</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="var"><span class="keyword">var</span><span class="name"> <span class="name">xx</span></span> <span class="punctuation">=</span> { a: 1<span class="punctuation">,</span> b: '2'<span class="punctuation">,</span> c: /a.*b/gi }<span class="punctuation">,</span><span class="name"><br/>            <span class="name">yy</span></span> <span class="punctuation">=</span> [1.2<span class="punctuation">,</span> 2e3<span class="punctuation">,</span> 3e-2]<span class="punctuation">,</span><span class="name"> <span class="comment"><span class="punctuation">//</span> test</span><br/>            <span class="name">zz</span></span> <span class="punctuation">=</span> function <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span></span>;<br/>    </span></span><span class="punctuation">}</span></span><br/>
-    </span><span class="stmt">while(true) <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        x();<br/>    </span></span><span class="punctuation">}</span><br/></span></span><span class="punctuation">}</span></span><br/>
-</span><span class="stmt"><span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>    a = 1;<br/>    </span><span class="stmt">b = '22';<br/></span></span><span class="punctuation">}</span><br/></span></span></pre>
+     <span class="punctuation">*/</span></span><br/>    <span class="func func-stmt"><span class="keyword">function</span> <span class="name">x</span><span class="punctuation">(</span><span class="arg"><span class="name">y</span></span><span class="punctuation">,</span> <span class="arg"><span class="name">z</span></span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="var"><span class="keyword">var</span> <span class="name">xx</span> <span class="punctuation">=</span> <span class="obj"><span class="punctuation">{</span> <span class="name">a</span><span class="punctuation">:</span> <span class="num">1</span><span class="punctuation">,</span> <span class="name">b</span><span class="punctuation">:</span> <span class="binop"><span class="str"><span class="punctuation">'</span>2<span class="punctuation">'</span></span> <span class="op">+</span> <span class="str"><span class="punctuation">"</span>3<span class="esc"><span class="punctuation">\</span>n</span><span class="punctuation">"</span></span></span><span class="punctuation">,</span> <span class="name">c</span><span class="punctuation">:</span> <span class="re"><span class="str"><span class="punctuation">/</span>a.*b<span class="punctuation">/</span></span><span class="punctuation">gi</span></span> <span class="punctuation">}</span></span><span class="punctuation">,</span><br/>            <span class="name">yy</span> <span class="punctuation">=</span> <span class="arr"><span class="punctuation">[</span><span class="num">1<span class="punctuation">.</span>2</span><span class="punctuation">,</span> <span class="num">2<span class="punctuation">e</span>3</span><span class="punctuation">,</span> <span class="num">3<span class="punctuation">e</span><span class="punctuation">-</span>2</span><span class="punctuation">,</span> <span class="num"><span class="punctuation">-</span>4</span><span class="punctuation">]</span></span><span class="punctuation">,</span> <span class="comment"><span class="punctuation">//</span> test</span><br/>            <span class="name">zz</span> <span class="punctuation">=</span> <span class="func func-expr"><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span></span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="expr-stmt"><span class="keyword this">this</span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="binop"><span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">a</span> <span class="op">=</span> <span class="num">Infinity</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="binop"><span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">b</span> <span class="op">=</span> <span class="num">NaN</span></span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="if"><span class="keyword">if</span><span class="punctuation">(</span><span class="binop"><span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">a</span> <span class="op">instanceof</span> <span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">b</span></span><span class="punctuation">)</span> <span class="return"><span class="keyword">return</span> <span class="keyword null">null</span></span><span class="punctuation">;</span><br/>            <span class="keyword">else</span> <span class="return"><span class="keyword">return</span> <span class="name">undefined</span></span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="expr-stmt"><span class="unop"><span class="op">delete</span> <span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">a</span></span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="expr-stmt"><span class="new"><span class="keyword">new</span> <span class="keyword this">this</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">f</span><span class="new-call"><span class="punctuation">(</span><span class="num">1</span><span class="punctuation">,</span> <span class="num">2</span><span class="punctuation">)</span></span></span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">b</span><span class="call"><span class="punctuation">(</span><span class="num">3</span><span class="punctuation">,</span> <span class="num">4</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="return"><span class="keyword">return</span> <span class="unop"><span class="op">typeof</span> <span class="keyword this">this</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/>
+    </span><span class="stmt"><span class="try"><span class="keyword">try</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="expr-stmt"><span class="name">someAction</span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="throw"><span class="keyword">throw</span> <span class="new"><span class="keyword">new</span> <span class="name">Error</span><span class="new-call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span> <span class="keyword">catch</span><span class="punctuation">(</span><span class="name">e</span><span class="punctuation">)</span> <span class="punctuation">{</span><br/>        <span class="comment"><span class="punctuation">//</span> catch error</span><br/>    <span class="punctuation">}</span> <span class="keyword">finally</span> <span class="punctuation">{</span><br/>        <span class="comment"><span class="punctuation">//</span> finally</span><br/>    <span class="punctuation">}</span><br/>
+    </span></span><span class="stmt"><span class="switch"><span class="keyword">switch</span><span class="punctuation">(</span><span class="name">a</span><span class="punctuation">)</span> <span class="punctuation">{</span><br/>        <span class="keyword">case</span> <span class="str"><span class="punctuation">'</span>1<span class="punctuation">'</span></span><span class="punctuation">:</span><br/>            <span class="stmts"><span class="stmt"><span class="expr-stmt"><span class="name">do1</span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>            </span><span class="stmt"><span class="break"><span class="keyword">break</span></span><span class="punctuation">;</span><br/>        </span></span><span class="keyword">default</span><span class="punctuation">:</span><br/>            <span class="stmts"><span class="stmt"><span class="expr-stmt"><span class="name">do2</span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/><br/>
+    </span><span class="stmt"><span class="for"><span class="keyword">for</span><span class="punctuation">(</span><span class="var"><span class="keyword">var</span> <span class="name">i</span> <span class="punctuation">=</span> <span class="num">0</span></span><span class="punctuation">;</span> <span class="binop"><span class="name">i</span> <span class="op"><</span> <span class="name">Things</span><span class="get-dot"><span class="punctuation">.</span></span><span class="name">length</span></span><span class="punctuation">;</span> <span class="postop"><span class="name">i</span><span class="op">++</span></span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="expr-stmt"><span class="name">Things</span><span class="get-sb"><span class="punctuation">[</span><span class="name">i</span><span class="punctuation">]</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/>
+    </span><span class="stmt"><span class="for"><span class="keyword">for</span><span class="punctuation">(</span><span class="var"><span class="keyword">var</span> <span class="name">k</span></span> <span class="keyword">in</span> <span class="name">obj</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="expr-stmt"><span class="name">obj</span><span class="get-sb"><span class="punctuation">[</span><span class="name">k</span><span class="punctuation">]</span></span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/>
+    </span><span class="stmt"><span class="do"><span class="keyword">do</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="if"><span class="keyword">if</span><span class="punctuation">(</span><span class="binop"><span class="name">b</span> <span class="op">===</span> <span class="num">1</span></span><span class="punctuation">)</span> <span class="continue"><span class="keyword">continue</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="postop"><span class="name">a</span><span class="op">++</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="unop"><span class="op">--</span><span class="name">b</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span> <span class="keyword">while</span><span class="punctuation">(</span><span class="binop"><span class="name">a</span> <span class="op">!==</span> <span class="name">b</span></span> <span class="punctuation">)</span></span><span class="punctuation">;</span><br/>
+    </span><span class="stmt"><span class="while"><span class="keyword">while</span><span class="punctuation">(</span><span class="binop"><span class="name">a</span> <span class="op">in</span> <span class="name">b</span></span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="var"><span class="keyword">var</span> <span class="name">a</span> <span class="punctuation">=</span> <span class="binop"><span class="num">1</span> <span class="op">+</span> <span class="punctuation">(</span><span class="binop"><span class="num">2</span> <span class="op">-</span> <span class="num">2</span></span><span class="punctuation">)</span></span><span class="punctuation">,</span><br/>            <span class="name">b</span> <span class="punctuation">=</span> <span class="keyword null">null</span><span class="punctuation">,</span><br/>            <span class="name">aa</span> <span class="punctuation">=</span> <span class="binop"><span class="num">1</span> <span class="op">+</span> <span class="postop"><span class="name">a</span><span class="op">++</span></span></span><span class="punctuation">,</span><br/>            <span class="name">bb</span> <span class="punctuation">=</span> <span class="binop"><span class="num">1</span> <span class="op">-</span> <span class="postop"><span class="name">b</span><span class="op">--</span></span></span><span class="punctuation">,</span><br/>            <span class="name">t</span> <span class="punctuation">=</span> <span class="bool">true</span><span class="punctuation">,</span><br/>            <span class="name">f</span> <span class="punctuation">=</span> <span class="bool">false</span></span><span class="punctuation">;</span><br/>
+        </span><span class="stmt"><span class="expr-stmt"><span class="name">x</span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="name">b</span><span class="get-sb"><span class="punctuation">[</span><span class="name">a</span><span class="punctuation">]</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="arr"><span class="punctuation">[</span><span class="num">1</span><span class="punctuation">]</span></span><span class="get-sb"><span class="punctuation">[</span><span class="num">1</span><span class="punctuation">]</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="new"><span class="keyword">new</span> <span class="name">x</span><span class="new-call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="str"><span class="punctuation">'</span>str ing <span class="esc"><span class="punctuation">\</span>n</span><span class="punctuation">'</span></span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="expr-stmt"><span class="name">a</span> <span class="op">?</span> <span class="name">b</span> <span class="op">:</span> <span class="name">c</span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="continue"><span class="keyword">continue</span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="break"><span class="keyword">break</span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="continue"><span class="keyword">continue</span> <span class="name">bla</span></span><span class="punctuation">;</span><br/>        </span><span class="stmt"><span class="break"><span class="keyword">break</span> <span class="name">bla</span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/>
+    </span><span class="stmt"><span class="with"><span class="keyword">with</span><span class="punctuation">(</span><span class="name">obj</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>        <span class="expr-stmt"><span class="name">bla</span><span class="call"><span class="punctuation">(</span><span class="punctuation">)</span></span></span><span class="punctuation">;</span><br/>    </span></span><span class="punctuation">}</span></span><br/></span></span><span class="punctuation">}</span></span><br/>
+</span><span class="stmt"><span class="label"><span class="name">label1</span><span class="punctuation">:</span> <span class="punctuation">{</span><span class="stmts"><span class="stmt"><br/>    <span class="expr-stmt"><span class="binop"><span class="name">a</span> <span class="op">=</span> <span class="num">1</span></span></span><span class="punctuation">;</span><br/>    </span><span class="stmt"><span class="expr-stmt"><span class="binop"><span class="name">b</span> <span class="op">=</span> <span class="str"><span class="punctuation">'</span>22<span class="punctuation">'</span></span></span></span><span class="punctuation">;</span><br/></span></span><span class="punctuation">}</span></span><br/></span></span></pre>
