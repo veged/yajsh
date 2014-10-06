@@ -24,7 +24,7 @@ exports.testPlugins = function(testFile, prjRoot, plugins) {
                         PATH.relative(prjRoot, htmlFileName),
                     function() {
                         // NOTE: JSON.parse(JSON.stringify(...)) because of Chai.js bug
-                        var res = yajsh.toHTML(FS.readFileSync(jsFileName, 'utf-8'));
+                        var res = yajsh.toHtmlCss(FS.readFileSync(jsFileName, 'utf-8'));
                         FS.writeFileSync(resFileName, res);
                         res.should.be.eql(
                             String(FS.readFileSync(htmlFileName)),
