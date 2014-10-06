@@ -1,7 +1,7 @@
 {
   "name": "yajsh",
   "description": "Semantic highlighter for JavaScript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Sergey Berezhnoy <veged@ya.ru> (http://github.com/veged)",
   "dependencies": {
     "coa": "^0.4.1",
