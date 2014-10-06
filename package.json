@@ -5,7 +5,7 @@
   "author": "Sergey Berezhnoy <veged@ya.ru> (http://github.com/veged)",
   "dependencies": {
     "coa": "^0.4.1",
-    "yajsh": "0.2.0",
+    "krasota": "0.2.0",
     "q": "^1.0.1",
     "stylus": "~0.47.1"
   },
