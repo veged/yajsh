@@ -14,7 +14,7 @@
     "chai": "1.8.1",
     "istanbul": "0.1.44"
   },
-  "main": "lib/",
+  "main": "lib/yajsh.js",
   "bin": {
     "yajsh": "./bin/yajsh"
   },
