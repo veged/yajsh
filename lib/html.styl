@@ -4,31 +4,159 @@
     background-color #fefefe
     font 12px PragmataPro, Monaco, Consolas, monospace
 
-    .stmt
-
-        > .function
-            color = #5677fc
-            > .keyword
-                color color
-            > .name
-                color color
-            > .punctuation
-                color rgba(color, 0.6)
-
-        > .var
-            color = #259b24
-            > .keyword
-                color color
-            > .name
-                color color
-            > .punctuation
-                color rgba(color, 0.6)
-
     .comment
-        color rgba(color, 0.5)
+        color rgba(color, 0.54)
         > .punctuation
-            color rgba(color, 0.3)
+            color rgba(color, 0.26)
+
+    .punctuation
+        color rgba(color, 0.54)
+
+    .op
+        color rgba(color, 0.54)
+
+    .name
+        color rgba(color, 0.87)
+
+    .obj,
+    .null
+        color = #9c27b0
+        color color
+        > .name
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .arr
+        color = #e91e63
+        color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .re
+        color = #cddc39
+        .str
+            color color
+        .punctuation
+            color rgba(color, 0.6) !important
+
+    .bool
+        color #00bcd4
+
+    .num
+        color = #ff5722
+        color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .str
+        color = #009688
+        color color
+        .punctuation
+            color rgba(color, 0.6)
+        .esc
+            font-weight bold
+
+    .this
+        font-weight bold !important
+
+    .get-sb
+        color = #5677fc
+        > .punctuation
+            font-weight bold
+            color color
+
+    .get-dot
+        color = #5677fc
+        > .punctuation
+            color color
+
+    .call
+        color = #5677fc
+        > .punctuation
+            font-weight bold
+            color color
+
+    .new
+        color = #056f00
+        > .keyword:first-child
+            color #056f00
+            font-weight normal !important
+        > .new-call > .punctuation
+            font-weight bold
+            color rgba(color, 0.6)
+
+    .func
+        color = #259b24
+        > .keyword
+            color #056f00
+        > .name,
+        > .arg > .name
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .var
+        color = #259b24
+        > .keyword:first-child
+            color #056f00
+        > .name
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .if,
+    .switch
+        color = #9e9d24
+        > .keyword
+            font-weight bold
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .for,
+    .while,
+    .do
+        color = #795548
+        > .keyword
+            font-weight bold
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
 
 
-    .keyword
-        font-weight bold
+    .try
+        color = #e51c23
+        > .keyword
+            font-weight bold
+            color color
+        > .punctuation
+            color rgba(color, 0.6)
+
+    .throw
+        color = #e51c23
+        > .keyword
+            color color
+
+    .return
+        color = #ff5722
+        > .keyword:first-child
+            color color
+
+    .break,
+    .continue
+        color = #ff5722
+        > .keyword
+            color color
+        > .name
+            color rgba(color, 0.6)
+
+
+    .stmt
+        > .keyword:first-child,
+        > * > .keyword:first-child
+            font-weight bold
+
+    .stmt > .expr-stmt > .keyword:first-child,
+        font-weight normal
+

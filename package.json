@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Sergey Berezhnoy <veged@ya.ru>",
   "dependencies": {
-    "krasota": "0.1.8",
+    "krasota": "0.2.0",
     "stylus": "~0.47.1"
   },
   "devDependencies": {
